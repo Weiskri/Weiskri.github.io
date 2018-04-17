@@ -1,0 +1,218 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Header Tags*/
+
+h1 {
+    color: #db4e79;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 4px;
+}
+
+h2 {
+    font-size: 60px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 0px;
+}
+
+
+body {
+    background: #374e75;
+    color: #FFF;
+    font-family: 'Libre Franklin', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+#self {
+    opacity: .8;
+}
+
+#aboutMe {
+    margin-left: 30px;
+
+}
+/*Animation Effect*/
+@keyframes bounceIn {
+    from, 20%, 40%, 60%, 80%, to {
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    0% {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    20% {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    40% {
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
+
+    60% {
+        opacity: 1;
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+
+    80% {
+        transform: scale3d(0.97, 0.97, 0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.bounceIn {
+    animation-duration: 0.75s;
+    animation-name: bounceIn;
+}
+
+/*Navigation Bar Styling*/
+
+
+nav {
+    font: 'Libre Franklin';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 100px;
+
+}
+
+    nav ul {
+        background: #444c59;
+        border-radius: 3px;
+        padding: 12px;
+        list-style: none;
+    }
+
+    nav li {
+        height: 32px;
+        display: inline-block;
+        border-right: 1px solid rgba(0,0,0,.1);
+        padding: 4px 18px;
+    }
+
+        nav li:first-of-type {
+            border-left: 1px solid rgba(0,0,0,.1);
+        }
+
+    nav a {
+        display: block;
+        border-bottom: 1px solid transparent;
+        padding: 4px;
+        font-family: 'Libre Franklin', sans-serif;
+        font-size: 120%;
+        text-decoration: none;
+        color: rgba(255,255,255,.7);
+    }
+
+[type="text"] {
+    width: 100px;
+    background: rgba(255,255,255,.9);
+    display: block;
+    margin-bottom: 1px;
+    border: 0;
+    padding: 4px 4px;
+    font-size: 75%;
+    color: #444;
+}
+
+nav li:not(.active):hover a {
+    border-bottom: 1px solid rgba(255,255,255,.5);
+    color: #db4e79;
+}
+
+nav .active a {
+    color: #fff;
+}
+
+nav .active:after {
+    content: '';
+    width: 0;
+    height: 0;
+    display: block;
+    position: relative;
+    margin: 14px auto;
+    border: 10px solid transparent;
+    border-top: 8px solid #db4e79;
+}
+
+input[type=email] {
+    font: Helvetica;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    border: 1px solid darksalmon;
+    width: 300px;
+}
+
+    input[type=email]:focus {
+        width: 100%;
+    }
+
+textarea {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    border: 1px solid #db4e79;
+    width: 350px;
+}
+
+#submitbutton {
+    margin-left: 200px;
+    width: 120px;
+    background: none;
+    border: 4px solid #db4e79;
+    color: #db4e79;
+    padding: 4px;
+    text-transform: uppercase;
+    font: 'Open Sans';
+}
+
+#submitbutton:hover {
+    background-color: white;
+}
+
+#inputBox {
+
+    padding-left: 30px;
+}
+
+.fa-github-alt {
+    color: #db4e79;
+    font-size: 30px;
+    padding-right: 30px;
+}
+
+.fa-linkedin {
+    color: #db4e79;
+    font-size: 30px;
+    padding-right: 30px;
+}
+
+.fa-envelope {
+    color: #db4e79;
+    font-size: 30px;
+}
+
+.fa-github-alt:hover, .fa-linkedin:hover, .fa-envelope:hover {
+    color: white;
+}

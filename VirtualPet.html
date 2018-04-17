@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script src="JavaScript.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="animate.min.css">
+    <link href="Projects.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="container-fluid animated bounceIn">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About Me.html">About</a></li>
+                <li class="active"><a href="Projects.html">Projects</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="row">
+            <div class="carousel">
+                <input id="image1" type="radio" name="image-selector" checked="checked" />
+                <label for="image4">View image 4</label>
+                <img src="/Pictures/virtual pet 1.jpg" />
+
+                <input id="image2" type="radio" name="image-selector" />
+                <label for="image1">View image 1</label>
+                <img src="/Pictures/virtual pet 2.jpg" />
+
+                <input id="image3" type="radio" name="image-selector" />
+                <label for="image2">View image 2</label>
+                <img src="/Pictures/virtual pet 3.jpg" />
+
+                <input id="image4" type="radio" name="image-selector" />
+                <label for="image3">View image 3</label>
+                <img src="/Pictures/virtual pet 4.jpg" />
+
+                <label for="image4">View image 4</label>
+                <label for="image1">View image 1</label>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-10">
+                <h1>Virtual Pet</h1>
+                <p>
+                    Skills used: C#, OOP, .NET
+                </p>
+                <p>
+                    This console application game challenges the user to look after a grumpy rabbit named Hegel. Some features of the app include a "tick" method that determines Hegel's mood, hunger, thirst, health, and cage cleanliness upon app initiation. Some of the values are random, while others, like his mood, depend on his hunger, health, etc. Hegel is finicky, and he will refuse food if he is sick or doesn't like what is offered to him. Doing certain actions in the app, like feeding him or taking him to the vet, will cause his needs and mood to change.
+                </p>
+
+                <button type="button" class="btn btn-primary"><a href="https://github.com/Weiskri/VirtualPet">View on Github</a></button>
+
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

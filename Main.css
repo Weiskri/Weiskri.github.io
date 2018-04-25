@@ -7,7 +7,7 @@
 
 h1 {
     color: #db4e79;
-    font-size: 40px;
+    font-size: 30px;
     display: flex;
     flex-direction: column;
     letter-spacing: 4px;
@@ -19,6 +19,7 @@ h2 {
     text-align: center;
     margin-bottom: 30px;
     margin-top: 0px;
+    text-decoration: underline;
 }
 
 
@@ -31,6 +32,16 @@ body {
     font-size: 14px;
 }
 
+.row {
+    border-radius: 10px;
+    box-shadow: black;
+    box-shadow: rgba(45, 46, 48, .4)20px 20px;
+    padding-bottom: 60px;
+    margin-left: 5px;
+    margin-right: 10px;
+    background-color: #444c59;
+}
+
 #self {
     opacity: .8;
 }
@@ -38,44 +49,6 @@ body {
 #aboutMe {
     margin-left: 30px;
 
-}
-/*Animation Effect*/
-@keyframes bounceIn {
-    from, 20%, 40%, 60%, 80%, to {
-        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    }
-
-    0% {
-        opacity: 0;
-        transform: scale3d(0.3, 0.3, 0.3);
-    }
-
-    20% {
-        transform: scale3d(1.1, 1.1, 1.1);
-    }
-
-    40% {
-        transform: scale3d(0.9, 0.9, 0.9);
-    }
-
-    60% {
-        opacity: 1;
-        transform: scale3d(1.03, 1.03, 1.03);
-    }
-
-    80% {
-        transform: scale3d(0.97, 0.97, 0.97);
-    }
-
-    to {
-        opacity: 1;
-        transform: scale3d(1, 1, 1);
-    }
-}
-
-.bounceIn {
-    animation-duration: 0.75s;
-    animation-name: bounceIn;
 }
 
 /*Navigation Bar Styling*/
@@ -196,23 +169,72 @@ textarea {
     padding-left: 30px;
 }
 
-.fa-github-alt {
-    color: #db4e79;
-    font-size: 30px;
-    padding-right: 30px;
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
 }
 
-.fa-linkedin {
-    color: #db4e79;
-    font-size: 30px;
-    padding-right: 30px;
+.fadeInLeft {
+    animation-name: fadeInLeft;
+    animation-duration: .9s;
+}
+.social-media-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 0;
 }
 
-.fa-envelope {
-    color: #db4e79;
-    font-size: 30px;
+.social-media-button {
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    position: relative;
+    margin: 1rem .5rem;
+    cursor: pointer;
+    transition: border-radius .25s, transform .5s, border-color 1s;
 }
 
-.fa-github-alt:hover, .fa-linkedin:hover, .fa-envelope:hover {
-    color: white;
+    .social-media-button i {
+        color: #fff;
+        font-size: 2rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: color .5s;
+    }
+
+    .social-media-button:hover {
+        border-radius: 10%;
+        border-color: #db4e79;
+        transform: rotate(360deg);
+    }
+
+    .social-media-button.linkedin:hover i {
+        color: #3b5998;
+    }
+
+    .social-media-button.github:hover i {
+        color: #6e5494;
+    }
+
+    .social-media-button.mail:hover i {
+        color: #db4e79;
+    }
+
+.col-md-8.contact {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
 }

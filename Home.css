@@ -53,10 +53,27 @@ body {
     padding-top: 300px;
 }
 
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.fadeInLeft {
+    animation-name: fadeInLeft;
+    animation-duration: .9s;
+}
+
 
 /*Animation Effect*/
 
-@keyframes bounceIn {
+/*@keyframes bounceIn {
     from, 20%, 40%, 60%, 80%, to {
         animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     }
@@ -92,7 +109,7 @@ body {
 .bounceIn {
     animation-duration: 0.75s;
     animation-name: bounceIn;
-}
+}*/
 
 /*Navigation Bar Styling*/
 

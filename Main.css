@@ -238,3 +238,31 @@ textarea {
     flex-wrap: wrap;
 
 }
+
+.skills {
+    width: auto;
+    height: 50px;
+
+}
+
+.col-sm-1 {
+    text-align: center;
+    float: left;
+
+}
+
+.col-md-12.skills-row {
+    margin-top: 30px;
+
+}
+
+h3 {
+    margin-bottom: 10px;
+    color:#db4e79; 
+}
+
+hr {
+    background-color: #8b8d8e;
+    width: 800px;
+    margin-bottom: 20px;
+}

@@ -337,6 +337,14 @@ nav .active:after {
     border: 1px solid white;
 }
 
+.box-12 .inner {
+    background-image: url('Pictures/Restaurant Thumb.jpg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid white;
+}
+
 
 .carousel {
     position: relative;
